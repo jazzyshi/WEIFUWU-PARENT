@@ -8,5 +8,14 @@
     <artifactId>parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--将项目发布到私服中-->
+    <distributionManagement>
+        <repository>
+            <!--id 要和setting里设置的一致-->
+            <id>snapshots</id>
+            <name>newsnapshots</name>
+            <url>http://192.168.254.128:8081/nexus/repository/maven-snapshots/</url>
+        </repository>
+    </distributionManagement>
 
 </project>
